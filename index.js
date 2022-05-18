@@ -89,10 +89,10 @@ function lengthMax(){
 function imgShow(index,fileName){
     cur = index
     if( index + 1 < 10) {
-        showImg.src = `/images/${fileName}/0${index + 1}.jpg`
+        showImg.src = `./images/${fileName}/0${index + 1}.jpg`
     }
     else {
-        showImg.src = `/images/${fileName}/${index + 1}.jpg`
+        showImg.src = `./images/${fileName}/${index + 1}.jpg`
     }
     original.style.display = "block"
 }
