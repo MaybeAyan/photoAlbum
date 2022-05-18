@@ -107,7 +107,6 @@ function ImgSrcChange (box,fileName){
     }
 }
 
-
 right.addEventListener('click',function(){
     ++cur
     lengthMax()
