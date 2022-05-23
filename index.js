@@ -3,6 +3,7 @@ $(window).on("load",function(){
     $('.wrap').fadeOut("slow")
 })
 
+
 // 导航栏切换效果
 var lis = document.querySelectorAll('li')
 var nav = document.querySelector('.nav')
@@ -131,3 +132,23 @@ close.addEventListener('click',()=>{
     original.style.display = "none"
 })
 
+
+// 回到顶部功能
+var backTop = document.querySelector('.backTop')
+
+backTop.addEventListener('click',function(){
+    window.scrollTo(0,0)
+    backTop.style.display = 'none'
+}
+)
+
+window.onscroll = function() {
+    //为了保证兼容性，这里取两个值，哪个有值取哪一个
+    //scrollTop就是触发滚轮事件时滚轮的高度
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    if(scrollTop > 500){
+        backTop.style.display = 'block'
+    } else {
+        backTop.style.display = 'none'
+    }
+}
