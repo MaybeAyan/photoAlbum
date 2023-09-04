@@ -1,6 +1,9 @@
 // jquery 动画加载首页
 $(window).on("load",function(){
-    $('.wrap').fadeOut("slow")
+    $('.wrap').fadeOut("slow");
+    $('.nav').css('display','');
+    $('.container').css('display','');
+    $('.index-footer').css('display','');
 })
 
 
